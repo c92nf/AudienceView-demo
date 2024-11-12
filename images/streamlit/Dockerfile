@@ -10,6 +10,7 @@ WORKDIR /app
 COPY requirements.txt /app
 RUN pip3 install -r /app/requirements.txt
 RUN rm -f /app/requirements.txt
+RUN pip3 install matplotlib
 
 ARG USERID=0
 ARG GROUPID=0
